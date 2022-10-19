@@ -66,7 +66,7 @@ VMware ESX 클릭후 Version을 아래와같이 설정
 
 ![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCFbtH%2FbtrO5r1OIdj%2FGmwyalwKVC2jYWquXHkThK%2Fimg.png) <br>
 
-![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fln8rT%2FbtrO5s7vqL3%2FyPk82QwnKv5GzkUtTFP0K1%2Fimg.png) <br>
+![dsa](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fln8rT%2FbtrO5s7vqL3%2FyPk82QwnKv5GzkUtTFP0K1%2Fimg.png)
 
 ![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdw5ulJ%2FbtrO44TjLHt%2FCYTan7HZpvFwqJQ583VkeK%2Fimg.png)
 
