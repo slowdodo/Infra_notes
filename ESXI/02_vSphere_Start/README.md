@@ -37,18 +37,27 @@ VMware 설치는 너무 많으니 생략하고 vSphere 설치부터 진행하겠
 # vSphere 운영체제 설치방법 2 - VMware에 설치 세팅
 
 vmware net Virtual Macine 누르기
+<br>
 ![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fedplh7%2FbtrOQrBxKSj%2FYR5PcEQGKCIYgSFtuEtqh1%2Fimg.png)
 
+<br>
 recoomanded 들어가기
+<br>
 ![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbDBrQA%2FbtrOD4tTyJn%2FSiVVPTIzF9KBYPanOvskO1%2Fimg.png)
 
+<br>
 다운받은 운영체제 넣기
+<br>
 ![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FlIAcu%2FbtrOQEAR893%2Fn80mv6mx0s3HoCEPc1pmgk%2Fimg.png)
 
+<br>
 VMware ESX 클릭후 Version을 아래와같이 설정
+<br>
 ![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbx2v9O%2FbtrOQudWQcD%2F78AFrF7Vpw3i1kfuaBJqJ1%2Fimg.png)
 
+<br>
 그 후로 설정은 사양따라 적당히 타협하며 진행하면 된다
+<br>
 
 ![img]https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fy7Bve%2FbtrO6gyOkcD%2FxD3m9kG6s9IWHkVR2oAD71%2Fimg.png)
 
@@ -59,6 +68,7 @@ VMware ESX 클릭후 Version을 아래와같이 설정
 # vSphere 운영체제 설치방법 3 - 네트워크 설정 
 
 여기서부터는 네트워크 설정이다. 
+<br>
 ![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fm5fGK%2FbtrO5ssV6px%2F4aj1IyCAZQO7XDkeKfKUD1%2Fimg.png)
 
 <br>
@@ -87,7 +97,7 @@ Host Only로 1개로 총 3개의 가상 NIC을 만들어준다.
 
 참고로 Host Only mode의 구성은 아래와 같다.
 <br>
-![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcYh2a1%2FbtrOQGleqYz%2F8QGvQdM02nZMbW6GrQX2A0%2Fimg.png")
+![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcYh2a1%2FbtrOQGleqYz%2F8QGvQdM02nZMbW6GrQX2A0%2Fimg.png)
 
 ---------
 # vSphere 운영체제 설치방법 4 - vSphere 실제 설치
