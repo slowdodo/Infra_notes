@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "ESXI 인프라 구축방법-2 vSphere설치 "
+---
+
 # 준비사항
 1. Window10 이상 
 2. VMware 15 이상 버전
@@ -6,6 +11,8 @@
 5. vShpere 8.0
 
 # 목록
+- [준비사항](#준비사항)
+- [목록](#목록)
 - [vSphere 운영체제 설치방법 1 - 운영체제 다운로드](#vsphere-운영체제-설치방법-1---운영체제-다운로드)
 - [vSphere 운영체제 설치방법 2 - VMware에 설치 세팅](#vsphere-운영체제-설치방법-2---vmware에-설치-세팅)
 - [vSphere 운영체제 설치방법 3 - 네트워크 설정](#vsphere-운영체제-설치방법-3---네트워크-설정)
@@ -62,11 +69,14 @@ VMware ESX 클릭후 Version을 아래와같이 설정
 
 여기서부터는 네트워크 설정이다. 
 <br>
-![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fm5fGK%2FbtrO5ssV6px%2F4aj1IyCAZQO7XDkeKfKUD1%2Fimg.png) <br>
+![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fm5fGK%2FbtrO5ssV6px%2F4aj1IyCAZQO7XDkeKfKUD1%2Fimg.png)
 
-![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCFbtH%2FbtrO5r1OIdj%2FGmwyalwKVC2jYWquXHkThK%2Fimg.png) <br>
+<br>
+![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCFbtH%2FbtrO5r1OIdj%2FGmwyalwKVC2jYWquXHkThK%2Fimg.png)
 
-![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fln8rT%2FbtrO5s7vqL3%2FyPk82QwnKv5GzkUtTFP0K1%2Fimg.png) <br>
+<br>
+![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fln8rT%2FbtrO5s7vqL3%2FyPk82QwnKv5GzkUtTFP0K1%2Fimg.png)
+<br>
 
 ![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdw5ulJ%2FbtrO44TjLHt%2FCYTan7HZpvFwqJQ583VkeK%2Fimg.png)
 
@@ -75,7 +85,7 @@ Host Only로 1개로 총 3개의 가상 NIC을 만들어준다.
 
 아래와 같은 네트워크 구조를 만들기 위해서 위와같이 3개의 가상의 NIC을 만들어주는것이다.
 <br>
-![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbPzGlA%2FbtrOQDWjkJW%2FKUXV8O8wVQv0C6Blgk3Xwk%2Fimg.png) <br>
+![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbPzGlA%2FbtrOQDWjkJW%2FKUXV8O8wVQv0C6Blgk3Xwk%2Fimg.png)
 
 그러면 우리가 만든 3개의 NIC은 무슨 역할을 할까? 아래와 같은 역할을 한다.
 
@@ -87,7 +97,7 @@ Host Only로 1개로 총 3개의 가상 NIC을 만들어준다.
 
 참고로 Host Only mode의 구성은 아래와 같다.
 <br>
-![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcYh2a1%2FbtrOQGleqYz%2F8QGvQdM02nZMbW6GrQX2A0%2Fimg.png) <br>
+![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcYh2a1%2FbtrOQGleqYz%2F8QGvQdM02nZMbW6GrQX2A0%2Fimg.png)
 
 ---------
 # vSphere 운영체제 설치방법 4 - vSphere 실제 설치
@@ -95,11 +105,9 @@ Host Only로 1개로 총 3개의 가상 NIC을 만들어준다.
 설치 자체는 쉽다. 그냥 가만히 있으면 설치된다.
 <br>
 ![설치](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbRFygD%2FbtrO5r8EjkH%2FY175NBCjVefi61pGXKNGbK%2Fimg.png)
-<br>
 
 설치가 다 되면은 아래와 같이 나올것이다.
 <br>
 ![vSpher 설치](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Frubpx%2FbtrOQDWh1Tn%2FNSs1gTTpAPdCiG5JePOTj0%2Fimg.png)
-<br>
 
 저기 나오는 IPv4 주소로 접속해주면은 기본적인 세팅 자체는 끝이다.
