@@ -23,7 +23,7 @@ title:  "ESXI 인프라 구축방법-2 vSphere설치 "
 ![snapshot](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F1ppQW%2FbtrODPjp9IE%2Fj1NZTU8FzwTDTBaAeTeyK0%2Fimg.png)
 
 나는 미리 했지만 기본적으로는 스냅샷이 안찍혀있을것이다.<br>
-스냅샷은 설정을 잘못하거나 했을때 과거로 되돌릴수가 있어서 매우 안정적으로 작업을 수행할 수가 있게된다.<br> 도커의 컨테이너 느낌이라 생각하면 된다.
+스냅샷은 설정을 잘못하거나 했을때 과거로 되돌릴수가 있어서 매우 안정적으로 작업을 수행할 수가 있게된다.<br> 도커의 컨테이너를 이미지로 바꾸는 느낌이라 생각하면 된다.
 
 # 네트워크 설정
 
