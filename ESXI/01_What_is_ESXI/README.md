@@ -7,7 +7,7 @@ title:  "ESXI 인프라 구축방법-1 vSphere와 ESXI란? "
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbZdzmd%2FbtrOQCJOW15%2FNtgKYZliBagXpKkKw7wWHK%2Fimg.png" width=600>
 
-* `VMware`를 활용한 [ESXI 기술](#esxi란)을 사용하는 기술 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vmware_workstation_16_icon.svg/1200px-Vmware_workstation_16_icon.svg.png " width="50">
+* `VMware`를 활용한 [ESXI 기술](#esxi란)을 사용하는 기술 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vmware_workstation_16_icon.svg/1200px-Vmware_workstation_16_icon.svg.png ">
 * VMware에 내장된 `Snapshot` 기능덕분에 안정적인 서비스가 가능한 가상화 플래폼이다.
 * 일반적인 가상화와는 다르게 서버의 리소스를 효율적으로 관리가 가능하다.
 
@@ -31,6 +31,7 @@ title:  "ESXI 인프라 구축방법-1 vSphere와 ESXI란? "
 # Baremetal Arcitecture란?
 
 게스트 운영 체제가 하이퍼바이저 위에서 실행되고 호스트 하드웨어에서 직접 실행되며 호스트 리소스에 대한 액세스 요청을 중재하는 가상화 아키텍처
-<img src="https://www.ionos.com/digitalguide/fileadmin/_processed_/5/b/csm_bare-metal-server-en_4b9b1e239f.png" width=500>
+<br>
+<img src="https://www.ionos.com/digitalguide/fileadmin/_processed_/5/b/csm_bare-metal-server-en_4b9b1e239f.png" width=500><br>
 * `Type1 Hypervisor` 기술을 사용
 <img src="https://miro.medium.com/max/1400/0*uOG3TpWM2BlBYkbg" width=400>
