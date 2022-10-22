@@ -103,7 +103,6 @@ route -n을 사용하여 게이트웨이를 확인하자.
 
 정상적인 gateway는 다음과같이 설정된다.
 
-![정상 gateway](./img2/normal_gateway.png)
 
 그럼 비정상적인 네트워크를 확인하기위해 다시 vm설정을 눌러주자
 
@@ -117,12 +116,11 @@ route -n
 ```
 
 ``` bash
-sudo ip route add default via 10.40.1.0 dev ens192
+sudo ip route add default via 10.40.1.1 dev ens192
 ```
 
 아래와같이 설정됐으면 잘된것이다. 
 
-![route_setting](./img2/route_setting.png)
 
 ``` bash
 route -n
