@@ -121,9 +121,14 @@ sudo ip route add default via 10.40.1.1 dev ens192
 
 아래와같이 설정됐으면 잘된것이다. 
 
-
 ``` bash
 route -n
+```
+
+다른 vlan으로 잘 접속되는지 확인하는건 간단하다
+
+``` bash
+ping -c 3 10.40.1.1
 ```
 
 # 총 3번 더 하기
@@ -131,3 +136,29 @@ route -n
 vlan이 4개 있다. 그 말은 이거 3번 더 해야된다는것이다.
 
 아까를 보며 3번을 더 반복해준다.
+
+# 결과
+
+아까와같이 잘 해줫다면은 아래와같이 정상적으로 접속되는것을 확인할 수가 있다.
+
+ping으로 한번 확인했으니 진짜로 접속해보자
+
+## ssh 서버
+``` bash
+sudo apt -y install openssh-server
+```
+``` bash
+ufw allow 22/tcp
+```
+
+``` bash
+sudo service ssh restart
+```
+
+## ssh client
+
+``` bash
+sudo apt -y install openssh-client
+````
+
+![finish](./img2/finish.png)
