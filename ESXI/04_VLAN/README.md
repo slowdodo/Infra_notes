@@ -85,26 +85,26 @@ LAN 연필 클릭 -> VLAN ID 4095(모두)로 변경
     * VLAN tag 30
     * Description `intranet_30` 입력
 
-2. Interface Assignments의 Available network prot에서 VLAN 40 on emo (office_40) 선택후 (+ADD) 클릭
-    * OPT4 클릭
+2. Interface Assignments의 Available network prot에서 VLAN 40 on emo (intranet_30) 선택후 (+ADD) 클릭
+    * OPT3 클릭
     * Enable Interface 체크
-    * Description `VLAN40_DB`로 변경
+    * Description `VLAN30_Intranet`로 변경
     * IPv4 Configuration Type은 Static IPv4로 변경
-    * Static IPv4 Configuration에서 IPv4 Address를 '10.40.1.1' 로 변경하고 '/24'로 변경
-3. Firewall:Rule 메뉴에서 vlan40_Intranet 선택
+    * Static IPv4 Configuration에서 IPv4 Address를 '10.30.1.1' 로 변경하고 '/24'로 변경
+3. Firewall:Rule 메뉴에서 vlan30_Intranet 선택
     * 왼쪽 끝의 add 버튼 누르고 새 룰 생성
     * Protocol Any로 변경
-    * Source는 `VLAN40_DB`으로 변경
+    * Source는 `VLAN30_Intranet`으로 변경
     * save 누르고 appply cahnce 누름
-4. Service -> DHCP Server로 이동한 후 `VLAN40_DB`탭을 클릭
-    * Enable DHCP server on VLAN10_WEB interface의 체크박스 클릭
-    * Range를 `10.40.1.2` to `10.40.1.50`으로 설정
+4. Service -> DHCP Server로 이동한 후 `VLAN30_Intranet`탭을 클릭
+    * Enable DHCP server on VLAN30_Intranet interface의 체크박스 클릭
+    * Range를 `10.30.1.2` to `10.30.1.50`으로 설정
     * save 클릭
 5. vSphere의 포트 그룹 이동 -> 포트 그룹 추가
-    * 이름: VLAN_40으로 입력
-    * VLAN ID 40입력
+    * 이름: VLAN_30으로 입력
+    * VLAN ID 30입력
 6. 가상 데스크탑 들어가서 ubuntu 생성 or 가져오기
-    * Ubuntu NIC VLAN_40으로 변경
+    * Ubuntu NIC VLAN_30으로 변경
 
 
 
@@ -122,18 +122,18 @@ LAN 연필 클릭 -> VLAN ID 4095(모두)로 변경
     * Enable Interface 체크
     * Description `VLAN20_OFFICE`로 변경
     * IPv4 Configuration Type은 Static IPv4로 변경
-    * Static IPv4 Configuration에서 IPv4 Address를 '10.20.1.1' 로 변경하고 '/24'로 변경
+    * Static IPv4 Configuration에서 IPv4 Address를 '10.40.1.1' 로 변경하고 '/24'로 변경
 3. Firewall:Rule 메뉴에서 vlan20_office 선택
     * 왼쪽 끝의 add 버튼 누르고 새 룰 생성
     * Protocol Any로 변경
-    * Source는 `VLAN20_OFFICE net`으로 변경
+    * Source는 `VLAN40_DB`으로 변경
     * save 누르고 appply cahnce 누름
-4. Service -> DHCP Server로 이동한 후 `VLAN20_OFFICE`탭을 클릭
-    * Enable DHCP server on VLAN10_WEB interface의 체크박스 클릭
-    * Range를 `10.20.1.2` to `10.20.1.50`으로 설정
+4. Service -> DHCP Server로 이동한 후 `VLAN40_DB`탭을 클릭
+    * Enable DHCP server on VLAN40_DB interface의 체크박스 클릭
+    * Range를 `10.40.1.2` to `10.40.1.50`으로 설정
     * save 클릭
 5. vSphere의 포트 그룹 이동 -> 포트 그룹 추가
-    * 이름: VLAN_20으로 입력
-    * VLAN ID 20입력
+    * 이름: VLAN_40으로 입력
+    * VLAN ID 40입력
 6. 가상 데스크탑 들어가서 ubuntu 생성 or 가져오기
-    * Ubuntu NIC VLAN_20으로 변경
+    * Ubuntu NIC VLAN_40으로 변경
