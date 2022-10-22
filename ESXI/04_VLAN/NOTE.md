@@ -148,7 +148,7 @@ ping으로 한번 확인했으니 진짜로 접속해보자
 sudo apt -y install openssh-server
 ```
 ``` bash
-ufw allow 22/tcp
+sudo ufw allow 22/tcp
 ```
 
 ``` bash
