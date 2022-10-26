@@ -24,7 +24,11 @@ Interfaces -> Interface Assignments 클릭 -> ADD 클릭
 
 ![3](./img/3.png)
 
-VLAN10_WEB 클릭후 아래와같이 설정
+VLAN10_WEB 클릭후 아래와같이 설정 후 save 누르기
+
+![17](./img/17.png)
+
+Service -> DHCP Server -> VLAN10_Server 클릭후 아래와같이 설정
 
 ![4](./img/4.png)
 
