@@ -97,7 +97,7 @@ LAN하고 WAN의 맥주소가 엇갈려있다. 8번은 누르고 SHELL에 들어
 ``` bash 
 ifconfig | less
 ```
-
+n
 ![pfsense](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmeKdt%2FbtrO3Fm6lXh%2F1rON9rczEWWl0iTcJi2HSk%2Fimg.png)
 
 
