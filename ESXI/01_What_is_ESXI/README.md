@@ -1,13 +1,8 @@
----
-layout: post
-title:  "ESXI 인프라 구축방법-1 vSphere와 ESXI란? "
----
-
 # vSphere
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbZdzmd%2FbtrOQCJOW15%2FNtgKYZliBagXpKkKw7wWHK%2Fimg.png" width=600>
+![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbZdzmd%2FbtrOQCJOW15%2FNtgKYZliBagXpKkKw7wWHK%2Fimg.png" width=600)
 
-* `VMware`를 활용한 [ESXI 기술](#esxi란)을 사용하는 기술 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vmware_workstation_16_icon.svg/1200px-Vmware_workstation_16_icon.svg.png ">
+* `VMware`를 활용한 [ESXI 기술](#esxi란)을 사용하는 기술 ![vmware]("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vmware_workstation_16_icon.svg/1200px-Vmware_workstation_16_icon.svg.png")
 * VMware에 내장된 `Snapshot` 기능덕분에 안정적인 서비스가 가능한 가상화 플래폼이다.
 * 일반적인 가상화와는 다르게 서버의 리소스를 효율적으로 관리가 가능하다.
 
