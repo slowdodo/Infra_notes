@@ -1,0 +1,125 @@
+<mxfile host="65bd71144e">
+    <diagram id="pf5CX3rk4NWtddjPnqxm" name="페이지-1">
+        <mxGraphModel dx="1135" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" value="" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;strokeWidth=3;" parent="1" source="17" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="320" y="140" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=none;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;strokeWidth=3;" parent="1" source="5" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="router(ex: pfsense, 공유기)&lt;br&gt;의 dhcp 서버가 제대로 동작하는지 확인&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="140" width="230" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="edgeStyle=none;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;strokeWidth=3;" parent="1" source="7" target="23" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="router의 로그를 확인하여&amp;nbsp;&lt;br&gt;정상적인 로그가 firewall에 의하여&amp;nbsp;&lt;br&gt;필터링되는지 확인" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="260" width="230" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="edgeStyle=none;html=1;strokeColor=#314354;strokeWidth=3;fillColor=#647687;" parent="1" source="9" target="31" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="route -n을 통하여 게이트웨이가&lt;br&gt;정상적으로 됐는지 확인" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="320" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="False" style="text;strokeColor=#2D7600;fillColor=#60a917;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="425" y="50" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="True" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="180" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="13" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="235" y="120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="ip 정상작동 못함" style="ellipse;whiteSpace=wrap;html=1;rounded=0;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="175" y="10" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#314354;strokeWidth=3;fillColor=#647687;" parent="1" source="17" target="55" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; background-color: rgb(42 , 42 , 42) ; display: inline ; float: none&quot;&gt;ifconfig로&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;color: rgb(240 , 240 , 240) ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; background-color: rgb(42 , 42 , 42)&quot;&gt;&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; font-family: &amp;#34;helvetica&amp;#34; ; background-color: rgb(42 , 42 , 42) ; display: inline ; float: none&quot;&gt;ip가 정상적인지 확인&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="132.5" y="120" width="205" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=none;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;strokeWidth=3;" parent="1" source="23" target="27" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;strokeColor=#E6E6E6;" parent="1" source="23" target="55" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="425" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="TCP 프로토콜과 UDP프로토콜&amp;nbsp;&lt;br&gt;두가지중 하나만 차단했는가?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="425" y="390" width="280" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="적절한 rule을 추가해서&amp;nbsp;&lt;br&gt;프로토콜의 접근을 허용하면 된다." style="ellipse;whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="462.5" y="560" width="205" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="edgeStyle=none;html=1;strokeColor=#314354;strokeWidth=3;fillColor=#647687;" parent="1" source="29" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="235" y="750" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;os firewall(iptables, ufw,Win FW&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;로그를 확인하고 정상적인 패킷을&amp;nbsp;&lt;/span&gt;&lt;/div&gt;막는지 확인하기" style="whiteSpace=wrap;html=1;rounded=0;align=center;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="620" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="edgeStyle=none;html=1;strokeColor=#314354;strokeWidth=3;fillColor=#647687;" parent="1" source="31" target="36" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="ping localhost 또는&lt;br&gt;ping 127.0.0.1&lt;br&gt;을 사용하여 loopback이 막혔는지 확인" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="420" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="edgeStyle=none;html=1;strokeColor=#314354;strokeWidth=3;fillColor=#647687;" parent="1" source="36" target="29" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="DNS가 정상적인지 확인하기" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="520" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#E6E6E6;" parent="1" source="41" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="750" y="740"/>
+                            <mxPoint x="750" y="20"/>
+                            <mxPoint x="565" y="20"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="" style="edgeStyle=none;html=1;strokeColor=#314354;strokeWidth=3;fillColor=#647687;" parent="1" source="41" target="47" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="static ip를 사용한다면&lt;br&gt;dhcp ip 사용해보기" style="rhombus;whiteSpace=wrap;html=1;rounded=0;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="700" width="190" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="False" style="text;strokeColor=#2D7600;fillColor=#60a917;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="680" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="" style="edgeStyle=none;html=1;strokeColor=#314354;strokeWidth=3;fillColor=#647687;" parent="1" source="47" target="50" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="vm에 연결된 NIC의 MAC주소와&lt;br&gt;ip의 맥주소의 정상여부를 확인" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="135" y="850" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; display: inline ; float: none&quot;&gt;NIC을 vlan을 사용한다면&lt;/span&gt;&lt;br style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; display: inline ; float: none&quot;&gt;lan을 사용하여 os의 문제가 아닌지&lt;/span&gt;&lt;br style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; display: inline ; float: none&quot;&gt;진단해보기&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="135" y="970" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; display: inline ; float: none&quot;&gt;NIC이란&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px&quot;&gt;&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; display: inline ; float: none&quot;&gt;Network Interface Card로&lt;/span&gt;&lt;br style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px&quot;&gt;&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; display: inline ; float: none&quot;&gt;컴퓨터를 인터넷과 연결하게 만드는 선이다.&lt;/span&gt;&lt;br style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px&quot;&gt;&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; display: inline ; float: none&quot;&gt;즉 간단하게 이더넷 선이라 생각하면 된다&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="960" width="260" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#314354;strokeWidth=3;fillColor=#647687;" parent="1" source="55" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="&lt;font face=&quot;helvetica&quot; style=&quot;line-height: 1.2 ; font-size: 10px&quot;&gt;vpn이나 proxy 설정을&lt;br&gt;체크하여 정상적인&amp;nbsp;&lt;br&gt;vpn이나 proxy인지 확인&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">
+                    <mxGeometry x="132.5" y="220" width="205" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
