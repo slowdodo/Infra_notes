@@ -1,8 +1,3 @@
----
-layout: post
-title:  "ESXI 인프라 구축방법-2 vSphere설치 "
----
-
 # 준비사항
 1. pfsense.iso
 2. Ubuntu22.04LTS.iso

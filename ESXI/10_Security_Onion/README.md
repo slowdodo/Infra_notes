@@ -63,4 +63,15 @@ so-rule-update
 
 security onion을 제대로 설치했다면 기본적으로 터미널환경이 제공됩니다. 최근에는 터미널을 기본으로 하고 analogy라는 스크립트를 실행하여 설치할시에   
 이전 보안양파와 같은 환경 즉 desktop 환경을 사용할수있습니다.  결정적인 차이점은 대부분의 프로그램은 도커위에서 띄운다는것 입니다.  
-여기서 자세히 봐야할점은 suricata만을 사용한다는 점이고 snort는 지원하지 않는다는 점 입니다. 
+여기서 자세히 봐야할점은 suricata만을 사용한다는 점이고 snort는 지원하지 않는다는 점 입니다.  
+하드웨어의 자원이 부족하면은 통상적으로 PPS(Packet Per Seconds) 처리속도가 snort가 훨씬 좋습니다만 
+하드웨어의 자원이 증가할수록 목적별 하드웨어 자원을 선택할수있는 분산멀티쓰레딩 방식을 활용하는 suricata가 PPS가 눈에 띄게 높아집니다.  
+그렇기에 suricata를 security onion에서 활용합니다. 아래 그래프는 suricata와 snort의 하드웨어 자원별 PPS를 처리하는 증가량을 나타내는 그래프입니다.  
+
+![IDS](./img/IDS.png)
+
+# 그외 알아두면 좋은사항
+
+suricata, snort 모두 돈을내면은 주기적으로 최신 이슈에 맞춰 룰을 업데이트해주는 enterpirce 정책이 있습니다.  
+기본적으로 snort랑 suricata는 룰에 대한 호환성을 가지고있습니다만 sucirata의 100%에 가까운 성능을 내기위해선 
+suricata에서 지원하는 rule을 활용하는것이 좋습니다.  
