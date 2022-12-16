@@ -164,3 +164,4 @@ vlan도 lan과 마찬가지로 인테넛에 정상접속이 가능해야된다.
 vSphere 접속용 wan - bridge auto
 우리가 사용하는 wan - bridge auto
 우리가 사용하는 lan - host only
+
