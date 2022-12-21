@@ -28,6 +28,12 @@ vim /etc/ansible/hosts
 10.10.1.3 ansible_user=server  
 10.10.1.4 ansible_user=server  
 
+[ftp]
+10.10.1.2 ansible_user=server
+
+[db]
+10.40.1.2 ansible_user=server
+
 공개키 교환을 안하면은 에러가 뜰텐데 일단은 숫자가 적으니까  
 각각 ssh로 접속하여 공개키 교환을 수동으로 하고 해주면된다.  
 
