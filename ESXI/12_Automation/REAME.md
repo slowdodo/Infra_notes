@@ -46,3 +46,8 @@ ansible webservers -m ping -k
 ``` bash
 ansible webservers -m "nslookup google.com" -k
 ```
+
+# 비밀번호
+상식적인 이야기지만 ssh는 공개키를 교환하면은 비밀번호를 입력하지않아도 ssh로 다른유저에게 접속이 가능하다.  
+우리가 할거는 공개키를 ftp에 올리고 ftp에서 각 클라이언트로 받아서 동시다발적으로 공개키를 받을것이다.  
+scp나 ssh-copy-id로도  가능하다.
