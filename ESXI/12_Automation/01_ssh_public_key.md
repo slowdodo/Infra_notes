@@ -75,4 +75,3 @@ ansible-playbook push-ssh-key.yml -k
 ```
 
 이러면 모든 서버에 rsa로 암호화된 공개키를 /home/{{ ansible_user }}/.ssh/authorized_keys 로 전송이 된다.  
-

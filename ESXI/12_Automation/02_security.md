@@ -18,5 +18,3 @@ ansible all -m apt -a "name=ufw state=present" -b -K
 ``` bash
 ansible-playground ufw_rule.yml
 ```
-
-[security_Onion](./rule/security_Onion.yml)
