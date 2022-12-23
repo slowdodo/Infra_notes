@@ -1,0 +1,19 @@
+---
+- hosts: all
+  tasks:
+    - name: Get bash users
+      shell: "cat /etc/passwd | grep bash"
+      register: bash_users
+    - name: Save bash users to file
+      copy:
+        content: "{{ bash_users.stdout }}"
+        dest: passwd.txt.origin
+    - name: Remove CHANGED lines from file
+      lineinfile:
+        path: passwd.txt.origin
+        regexp: '^.*CHANGED.*$'
+        state: absent
+      delegate_to: localhost
+    - name: Move modified file
+      command: mv passwd.txt.origin passwd.txt
+      delegate_to: localhost

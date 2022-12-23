@@ -1,0 +1,11 @@
+- name: Push SSH public key to client machines
+  hosts: all
+  tasks:
+    - name: Write the new ec2 instance host key to known hosts
+    connection: local
+    shell: "ssh-keyscan -H {{ ansible_user }} >> ~/.ssh/known_hosts"
+
+    - name: Add public key to authorized keys
+      authorized_key:
+        user: "{{ ansible_user }}"
+        key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
