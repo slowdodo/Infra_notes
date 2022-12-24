@@ -15,3 +15,8 @@
       ansible.builtin.apt:
         name: libpam-pwquality
         state: present
+    
+    - name: lynis - security checks tool
+      ansible.builtin.apt:
+        name: lynis
+        state: present

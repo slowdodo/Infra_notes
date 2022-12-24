@@ -24,6 +24,7 @@ vim /etc/ansible/hosts
 ```
 > /etc/ansible/hosts
 
+``` bash
 [webservers]  
 10.10.1.2 ansible_user=server  
 10.10.1.3 ansible_user=server  
@@ -35,6 +36,9 @@ vim /etc/ansible/hosts
 [db]
 10.40.1.2 ansible_user=server
 
+[office]
+10.30.1.2 ansible_user=server
+```
 공개키 교환을 안하면은 에러가 뜰텐데 일단은 숫자가 적으니까  
 각각 ssh로 접속하여 공개키 교환을 수동으로 하고 해주면된다.  
 
@@ -47,6 +51,23 @@ ansible webservers -m ping -k
 ``` bash
 ansible webservers -m "nslookup google.com" -k
 ```
+
+# 하지만
+이러한 방법은 호스트의 숫자가 많을수록 비효율적이다.   
+이것또한 자동화할것이다. 인터넷에는 ansible-playground를 사용하여 공개키를 이상하게 교환하는데 이건 복잡하기만 하고 비효율적이니 비추다.  
+ssh를 설치하면 있는 `ssh-keyscan`을 이용한 방법을 사용할것이다.  
+호스트 ip만을 출력해주는 스크립트다. 아래와 같이 해주자  
+
+``` bash
+ansible all -m ping --list-hosts | grep -v hosts | awk '{print $1}' > host_list
+```
+
+주의할점은 ansible에 등록하지 않는 호스트를 사용할경우 >>를 사용하여 append 모드를 사용하자.  
+이거는 overwrite라서 이전 `known_hosts`는 사라진다.
+``` bash
+ssh-keyscan -f host_list > ~/.ssh/known_hosts
+```
+
 
 # 비밀번호
 상식적인 이야기지만 ssh는 공개키를 교환하면은 비밀번호를 입력하지않아도 ssh로 다른유저에게 접속이 가능하다.  
@@ -65,7 +86,6 @@ ansible-playbook ssh_publicKey_change -k
 ```
 
 이러면 모든 서버에 rsa로 암호화된 공개키를 /home/{{ ansible_user }}/.ssh/authorized_keys 로 전송이 된다.  
-
 
 이러한 옵션들을 더 자세히 공부하고싶다면은  [ansible_doc](https://docs.ansible.com/ansible/latest/inventory_guide/connection_details.html)
 여기를 참고하여 yml을 작성해보자

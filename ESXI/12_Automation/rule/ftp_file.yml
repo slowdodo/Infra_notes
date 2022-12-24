@@ -13,3 +13,15 @@
           - name: metricbeat
             shell:
                     cmd: "curl -o --silent --user ftpuser:1234 ftp://10.11.1.2/upload/metricbeat-oss-8.4.3-amd64.deb"
+
+          - name: Install filebeat
+            apt:
+                    deb: filebeat-oss-8.4.3-amd64.deb
+
+          - name: Install auditbeat
+            apt:
+                    deb: auditbeat-oss-8.4.3-amd64.deb
+
+          - name: Install metricbeat
+            apt:
+                    deb: metricbeat-oss-8.4.3-amd64.deb
