@@ -1,0 +1,15 @@
+---
+- name: basic secure package download and check
+  hosts: all
+  tasks:
+          - name: auditbeat
+            shell:
+                    cmd: "curl -O --silent --user ftpuser:1234 ftp://10.11.1.2/upload/auditbeat-oss-8.4.3-amd64.deb"
+
+          - name: filebeat
+            shell:
+                    cmd: "curl -O --silent --user ftpuser:1234 ftp://10.11.1.2/upload/filebeat-oss-8.4.3-amd64.deb"
+
+          - name: metricbeat
+            shell:
+                    cmd: "curl -o --silent --user ftpuser:1234 ftp://10.11.1.2/upload/metricbeat-oss-8.4.3-amd64.deb"
