@@ -44,6 +44,8 @@ rm -f group.txt.origin
 오픈소스이며 표준 패키지에 항상 포함되있는 등 다양한 장점으로 여러가지로 사용되는 도구이다.  
 우리는 이 도구를 사용할것이다.  
 
+간단하게 심각 수준의 보안 취약점을 스캔을 해주자.  
+
 ``` bash
 ansible all -m shell -a "lynis audit system --warnings-only" -b -K > WARNING.txt
 ```
@@ -75,3 +77,16 @@ ansible all -m shell -a "lynis audit system --warnings-only" -b -K > WARNING.txt
     - Minimal of 2 responsive nameservers                     [ WARNING ]
   - Permissions of home directories                           [ WARNING ]
 ```
+1. 기본적으로 ansible을 위한 sudo 세팅으로 인하여 심각한 보함결함이 나타났다.
+2. 네임서버가 최소 2개이상이다.
+3. 홈 디렉터리의 사용권한이 비정상적이다.
+4. 홈 디렉터리 소유권이 비 정상적이다.
+
+즉 4개의 케이스가 있는데 실제로는 여러 의견을 조율하면서 실 서비스가 문제되지 않게 하면서 고쳐야 하지만  
+우리는 가상의 환경을 사용하고있으며 간단한 서비스를 띄우고 하기때문에 자동화시켜서 이 문제를 해결할것이다.
+그전에 이 문제점들이 왜 심각한 취약점인지 먼저 예상먼저 해보자
+
+1. 이 케이스는 당연하게도 일반 유저에 우리는 아무런 제한과 규정없이 허용했기에 해커가 이 sudo 권한을 가진 사용자의 비밀번호를 탈취할시에  
+그 서비스의 모든 제어권이 넘어가게된다. 참고로 이 서비스들을 통합적으로 관리하는 ansible controler인 master에 연결권한도 제한하지 않았기에  
+최악에는 해커가 모든 제어권을 장악하고 한번에 모든 서비스를 제어할수 있게된다.  
+2. 

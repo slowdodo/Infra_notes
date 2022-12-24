@@ -86,7 +86,6 @@ ansible-playbook ssh_publicKey_change -k
 ```
 
 이러면 모든 서버에 rsa로 암호화된 공개키를 /home/{{ ansible_user }}/.ssh/authorized_keys 로 전송이 된다.  
-
 이러한 옵션들을 더 자세히 공부하고싶다면은  [ansible_doc](https://docs.ansible.com/ansible/latest/inventory_guide/connection_details.html)
 여기를 참고하여 yml을 작성해보자
 
