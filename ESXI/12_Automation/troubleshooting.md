@@ -8,3 +8,7 @@
 # rule 5번에 대한 보안적 트러블슈팅
 1. 다른 slave들이 root를 가질때 ssh로 접근하는 master를 한정시켰는가? -> root로 ssh가 접근할수있다면은 심각한 보안 취약점이 되므로 반드시 제한해라
 2. 그 master가 일반 유저들이 쉽게 접근할수있는 권한을 가졌는가? -> 가졌다면 심각한 구조적 보안취약점이 될수있다. 
+
+# 정책적, 보안적, 직접 접근하여도 문제가 없는데 ansible-playground만 안될떄
+> sh라는 shell을 사용했을때 특정 tools을 사용이 가능한가?
+-> 기본적으로 shell이라는 module은 bash shell이 아닌  sh라는 shell이다.  
